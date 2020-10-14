@@ -110,7 +110,7 @@ class USPS implements ICarrier {
         if(s.service!="priority")
             return null // only priority has cubic rates - fake news
         let cubic = "1";// CalculateCubic(s);
-        return `${s.service}-zone${zone}priority-zone1-cubic-${cubic}`
+        return `${s.service}-zone${zone}-cubic${cubic}`
 
     }
     //Helper function to generate the key for weight rating
